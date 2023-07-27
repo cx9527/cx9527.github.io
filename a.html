@@ -23,7 +23,13 @@
 
         document.write('<h1>11111</h1>')
 
-        android.downloadApp('{"json":"{\"pkg\":\"com.sankuai.meituan\"}"}');
+
+        var json = {
+            'json': {
+                'pkg': 'com.sankuai.meituan'
+            }
+        }
+        android.downloadApp(JSON.stringify(json));
     }
 
 
