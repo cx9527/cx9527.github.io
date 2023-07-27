@@ -24,34 +24,40 @@
         document.write('<h1>11111</h1>')
 
 
+        // var json = {
+        //     'type': 'download_start',
+        //     'json': {
+        //         'pkg': 'com.sankuai.meituan',
+        //         'id': 1122334
+        //     }
+        // }
+        // android.callNativeApi(JSON.stringify(json));
+
+        // var json2 = {
+        //     'type': 'download_get_status',
+        //     'id': '1122334'
+        // }
+        
+        //  document.write('<h1>123'+android.callNativeApi(JSON.stringify(json2))+'</h1>')
+
+        // var json3 = {
+        //     'type': 'create_calendar_remind',
+        //     'json': {
+        //         'title': 'tt',
+        //         'description': '111asdkfjlsdfk',
+        //         'startTime': 1690444534,
+        //         'endTime': 1690448134,
+        //         'remindTime': 1690444534
+        //     }
+        // }
+        
+        //  document.write('<h1>calendar: '+android.callNativeApi(JSON.stringify(json3))+'</h1>')
+
         var json = {
-            'type': 'download_start',
-            'json': {
-                'pkg': 'com.sankuai.meituan',
-                'id': 1122334
-            }
+            'type': 'reserve_app',
+            'id': '11223345'
         }
-        android.callNativeApi(JSON.stringify(json));
-
-        var json2 = {
-            'type': 'download_get_status',
-            'id': '1122334'
-        }
-        
-         document.write('<h1>123'+android.callNativeApi(JSON.stringify(json2))+'</h1>')
-
-        var json3 = {
-            'type': 'create_calendar_remind',
-            'json': {
-                'title': 'tt',
-                'description': '111asdkfjlsdfk',
-                'startTime': 1690444534,
-                'endTime': 1690448134,
-                'remindTime': 1690444534
-            }
-        }
-        
-         document.write('<h1>calendar: '+android.callNativeApi(JSON.stringify(json3))+'</h1>')
+        document.write('<h1>reserve: '+android.callNativeApi(JSON.stringify(json))+'</h1>')
     }
 
 
