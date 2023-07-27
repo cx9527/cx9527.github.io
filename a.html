@@ -31,6 +31,12 @@
             }
         }
         android.downloadApp(JSON.stringify(json));
+
+        var json2 = {
+            'type': 'download_get_status',
+            'id': '1122334'
+        }
+        android.callNativeApi(JSON.stringify(json2))
     }
 
 
