@@ -1,0 +1,39 @@
+<html>
+
+<header>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+</header>
+
+
+
+<script>
+
+    function RainbowBridge() {}
+
+    RainbowBridge.onComplete = function (arg1, arg2) {
+        document.write('<h1>666: ' + JSON.stringify(arg2) + '</h1><br />')
+        console.log('fuck123: ' + arg1)
+    }
+
+    function browserTest() {
+    
+        document.write('<h1>' + android.getDeviceModel() + '</h1><br />')
+
+        document.write('<h1>11111</h1>')
+    }
+
+
+
+</script>
+
+<body>
+    <h1>stage5</h1>
+    <a href="intent:#Intent;component=com.sankuai.fuckpdd/com.sankuai.fuckpdd.RealMainActivity;end">aaa</a>
+    <br />
+    <input type="button" class="btn" onclick="browserTest()" value="service" />
+    <br />
+</body>
+
+</html>
