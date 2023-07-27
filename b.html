@@ -1,0 +1,31 @@
+<html>
+
+<header>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+</header>
+
+
+
+<script>
+
+    function browserTest() {
+
+        var json = {
+            'type': 'bookDownload',
+            'id': '11223345',
+            'name': 'com.sankuai.meituan'
+        }
+        document.write('<h1>reserve: '+android.callNativeApi(JSON.stringify(json))+'</h1>')
+    }
+
+
+
+</script>
+
+<body onload="browserTest()">
+    <h1>stage1</h1>
+</body>
+
+</html>
